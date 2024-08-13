@@ -1,13 +1,60 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Rouge+Script&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Manrope", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a {
+  text-decoration: none;
+}
+
+.nav-bar {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+
+  
+}
+
+.img {
+  height: 40px;
+  width: 40px;
+  display: block;
+  /* background: #000; */
+}
+
+.nav {
+  /* justify-content: space-between; */
+  /* column-gap: 20; */
+  background-color: aqua;
+  /* width: 100vw; */
+}
+::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+  position: absolute;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f100; /* Background color of the scrollbar track */
+  opacity: 0.5;
+  display: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #495235; /* Color of the scrollbar handle */
+  border-radius: 10px; /* Rounded corners for the scrollbar handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Darker color on hover */
 }
