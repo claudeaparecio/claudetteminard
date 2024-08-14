@@ -1,22 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+
 
 const NavBar = () => {
+  const [isOpen, setIsOpen] = useState(false)
+
+
   return (
-    <header className="  py-8 md:px-[100px] sm:px-[20px] phone:px-[20px] w-full fixed top-0 z-10 ">
-      <div className="bg-greenAccent py-5 px-10 rounded-3xl items-center  w-full flex flex-row justify-between">
+    <motion.header 
+    initial={false}
+    animate={isOpen ? "open" : "closed"}
+    className="py-8 md:px-[100px] sm:px-[20px] phone:px-[20px] w-full fixed top-0 z-10 flex md:flex-row phone:flex-col ">
+      <div className="bg-greenAccent sm:p-2 phone:p-4 md:py-5 md:px-10 rounded-xl items-center  w-full flex flex-row justify-between">
         <a href="/" className="">
           <img
             src="./images/cm-logo.svg"
-            className="w-auto object-cover"
+            className="md:w-auto object-cover phone:w-[35px]"
             alt="logo here"
           />
         </a>
         <nav className="space-x-6 uppercase font-bold text-yellowAccent sm:hidden phone:hidden md:block ">
           <a href="/">Home</a>
-          <a href="/our-story">Our Story</a>
           <a href="/the-wedding">The Wedding</a>
+          <a href="/frequently-asked-questions">FAQ's</a>
         </nav>
-        <button className="md:hidden phone:block sm:block " >
+        <button onClick={() => setIsOpen(!isOpen)} className="md:hidden phone:block sm:block " >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -32,7 +40,31 @@ const NavBar = () => {
           </svg>
         </button>
       </div>
-    </header>
+      <motion.div variants={{
+          open: {
+            clipPath: "inset(0% 0% 0% 0% round 10px)",
+            transition: {
+              type: "spring",
+              bounce: 0,
+              duration: 0.7,
+              delayChildren: 0.3,
+              staggerChildren: 0.05
+            }
+          },
+          closed: {
+            clipPath: "inset(10% 50% 90% 50% round 10px)",
+            transition: {
+              type: "spring",
+              bounce: 0,
+              duration: 0.3
+            }
+          }
+        }} className="space-y-2 uppercase font-bold text-yellowAccent sm:hidden phone:flex phone:flex-col md:hidden items-center bg-greenAccent my-2 p-2 rounded-xl">
+          <a href="/">Home</a>
+          <a href="/the-wedding">The Wedding</a>
+          <a href="/frequently-asked-questions">FAQ's</a>
+        </motion.div>
+    </motion.header>
   );
 };
 
