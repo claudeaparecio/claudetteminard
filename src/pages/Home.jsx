@@ -7,9 +7,9 @@ const Home = () => {
       <div className="relative md:h-screen phone:h-[800px] flex ">
         <div className="h-2/3 w-full items-center justify-center  object-cover flex flex-col px-[100px] z-[1] absolute bottom-0 bg-gradient-to-t from-[#FFFBF4]">
           <div className="drop-shadow-xl shadow-black text-greenAccent md:text-[170px] sm:text-[120px] phone:text-[100px]">
-            <p className="font-cursive mt-10 ">Minard</p>
+            <p className="font-cursive mt-10 ">Claudette</p>
             <p className="font-cursive md:-mt-28  md:ml-32 sm:ml-20 phone:ml-16 sm:-mt-16 phone:-mt-16">
-              Claudette
+              Minard
             </p>
           </div>
         </div>
