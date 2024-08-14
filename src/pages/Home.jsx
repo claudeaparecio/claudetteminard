@@ -30,7 +30,7 @@ const Home = () => {
             <div className="z-[3] flex md:items-center sm:items-end">
               <div className="md:w-[420px] sm:w-[320px] phone:w-[180px] md:h-[600px] sm:h-[450px] phone:h-[200px] md:p-8 sm:p-6 phone:p-3 rounded-md bg-yellowAccent -rotate-3">
                 <img
-                  src="./images/header-2.jpeg"
+                  src="./images/header-2.jpg"
                   className="h-4/5 rounded-md w-full object-cover"
                   alt="Header"
                 />
@@ -59,8 +59,8 @@ const Home = () => {
                 alt="Header"
               />
               <div className="flex phone:flex-col sm:flex-col md:flex-row md:justify-center sm:items-center phone:items-center  gap-x-10 mb-2 md:text-[50px] sm:text-[45px] phone:text-[40px]">
-                <p className="font-cursive ">John Minard Jorolan</p>
                 <p className="font-cursive">Claudette Aparecio</p>
+                <p className="font-cursive ">John Minard Jorolan</p>
               </div>
               <div className="flex flex-col text-center items-center gap-x-10 my-2">
                 <p className="font-regular text-[20px]">CEREMONY:</p>
@@ -85,6 +85,9 @@ const Home = () => {
                   Elegant rustic white and green theme
                 </p>
               </div>
+              <button className="text-[18px] my-10 uppercase py-4 px-7 w-3/5 bg-greenAccent text-[#f2f2f2] rounded-md">
+                <a className="font-bold text-[20px]" href="/frequently-asked-questions">LEARN MORE</a>
+              </button>
             </div>
           </div>
         </div>
@@ -94,28 +97,27 @@ const Home = () => {
           alt="Header"
         />
       </div>
-      <div class="w-full relative h-[70vh] flex items-center justify-start bg-[#FFFBF4] ">
-        <div className="items-center  md:px-[100px] w-full justify-between text-start flex flex-row">
-          <div className="w-1/2 z-[3] flex ">
-            
-          <div class='w-4/5 h-full flex flex-col pt-5 items-center justify-center text-greenAccent bg-white border-dashed rounded-3xl border-2 border-greenAccent'>
-          <p className="font-cursive text-[90px]">You are Invited</p>
-            <img
+      <div class="w-full relative md:h-[70vh] phone:h-auto flex items-center justify-start bg-[#FFFBF4] ">
+        <div className="items-center phone:gap-y-10 md:px-[100px] phone:px-4 sm:px-4 w-full justify-between text-start flex md:flex-row sm:flex-col phone:flex-col-reverse">
+          <div className="md:w-1/2 phone:w-full z-[3] flex ">
+            <div class="md:w-4/5 phone:w-full h-full flex flex-col pt-5 items-center justify-center text-greenAccent bg-white border-dashed rounded-3xl border-2 border-greenAccent">
+              <p className="font-cursive md:text-[90px] sm:text-[60px] phone:text-[50px]">You are Invited</p>
+              <img
                 src="./images/flower-ornament.png"
                 className="h-auto w-[180px] mb-4 object-cover"
                 alt="Header"
               />
-            <p className="font-light text-center text-[20px]">We're overjoyed to celebrate our love with you. <br></br> Please join us for our wedding ceremony and reception.</p>
+              <p className="font-light text-center md:text-[20px] sm:[14px] phone:text-[14px] ">
+                We're overjoyed to celebrate our love with you. <br></br> Please
+                join us for our wedding ceremony and reception.
+              </p>
 
-          <button className="text-[18px] my-10 uppercase py-4 px-7  bg-greenAccent text-[#f2f2f2] rounded-md" >
-            <a href="/the-wedding" >
-            View List of Guests
-            </a>
-          </button>
+              <button className="text-[18px] my-10 uppercase py-4 px-7  bg-greenAccent text-[#f2f2f2] rounded-md">
+                <a href="/the-wedding">View List of Guests</a>
+              </button>
+            </div>
           </div>
-          </div>
-          
-          <div className="md:w-1/2 sm:w-[320px] phone:w-[180px] md:h-[600px] sm:h-[450px] phone:h-[200px] md:p-8 sm:p-6 phone:p-3 rounded-md bg-yellowAccent -rotate-3">
+          <div className="md:w-1/2 sm:w-full phone:w-full md:h-[600px] sm:h-[450px] phone:h-auto md:p-8 sm:p-6 phone:p-4 rounded-md bg-yellowAccent -rotate-3">
             <img
               src="./images/image-2.jpg"
               className="h-full rounded-md w-full object-cover"
