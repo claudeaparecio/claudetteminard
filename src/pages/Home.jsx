@@ -6,7 +6,7 @@ const Home = () => {
     <div className="flex flex-col overflow-hidden">
       <div className="relative md:h-screen phone:h-[800px] flex ">
         <div className="h-2/3 w-full items-center justify-center  object-cover flex flex-col px-[100px] z-[1] absolute bottom-0 bg-gradient-to-t from-[#FFFBF4]">
-          <div className="drop-shadow-xl shadow-black text-greenAccent md:text-[170px] sm:text-[120px] phone:text-[100px]">
+          <div className="drop-shadow-xl shadow-black text-greenAccent md:text-[170px] sm:text-[120px] phone:text-[80px]">
             <p className="font-cursive mt-10 ">Claudette</p>
             <p className="font-cursive md:-mt-28  md:ml-32 sm:ml-20 phone:ml-16 sm:-mt-16 phone:-mt-16">
               Minard
@@ -15,18 +15,18 @@ const Home = () => {
         </div>
         <img
           src="./images/image-1.jpg"
-          className="h-full w-full object-cover absolute top-0"
+          className="h-full w-full object-cover absolute top-0 phone:mr-10"
           alt="Header"
         />
       </div>
       <div class="w-full relative md:h-[70vh] flex items-center justify-start bg-[#FFFBF4] ">
         <img
           src="./images/floral-01.png"
-          className="md:h-[700px] phone:h-[180px] sm:h-[250px] absolute md:-bottom-40 sm:-bottom-64 phone:-bottom-64 sm:-rotate-45 z-[3] left-0  w-auto object-cover top 0 "
+          className="md:h-[700px] phone:h-[180px] sm:h-[250px] absolute md:-bottom-40 sm:-bottom-64 phone:-bottom-64 sm:-rotate-45 z-[1] left-0  w-auto object-cover top 0 "
           alt="Header"
         />
         <div className="flex w-full md:flex-row sm:flex-col phone:flex-col">
-          <div className="items-center text-[150px] md:px-[100px]  justify-center text-start flex flex-col">
+          <div className="items-center text-[150px]  justify-center text-start flex flex-col">
             <div className="z-[3] flex md:items-center sm:items-end">
               <div className="md:w-[420px] sm:w-[320px] phone:w-[180px] md:h-[600px] sm:h-[450px] phone:h-[200px] md:p-8 sm:p-6 phone:p-3 rounded-md bg-yellowAccent -rotate-3">
                 <img
@@ -44,8 +44,8 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="flex-1 items-center md:pl-10 phone:px-2 sm:px-2 justify-center sm:pt-16 phone:pt-16 ">
-            <div className="flex flex-col md:w-3/5 sm:w-full items-center text-yellowAccent">
+          <div className="flex-1 items-center md:pl-10 phone:px-2 sm:px-2 justify-center align sm:pt-16 phone:pt-16 ">
+            <div className="flex flex-col md:w-full sm:w-full items-center text-yellowAccent">
               <p className="font-bold text-[24px] tracking-[10px]">
                 WE'RE GETTING
               </p>
@@ -117,7 +117,7 @@ const Home = () => {
               </button>
             </div>
           </div>
-          <div className="md:w-1/2 sm:w-full phone:w-full md:h-[600px] sm:h-[450px] phone:h-auto md:p-8 sm:p-6 phone:p-4 rounded-md bg-yellowAccent -rotate-3">
+          <div className="md:w-1/2 sm:w-full phone:w-full md:h-[600px] sm:h-[450px] phone:h-auto md:p-8 sm:p-6 phone:p-4 rounded-md bg-yellowAccent -rotate-3 z-[3]">
             <img
               src="./images/image-2.jpg"
               className="h-full rounded-md w-full object-cover"

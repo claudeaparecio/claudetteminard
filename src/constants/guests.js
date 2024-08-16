@@ -27,7 +27,8 @@ export const guestList = {
         "Mrs. Merilyn E. Marfilo",
         "Mrs. Marissa E. Villaflor",
         "Mrs. Evangeline B. Narra",
-        "Mrs. Helen Maquiling"
+        "Mrs. Helen Maquiling",
+        "Ms. Pacita L. Aparecio"
     ],
     bestMan: [
         "Reynaldo P. Gayonilo Jr."
@@ -56,7 +57,6 @@ export const guestList = {
         "Rogelin L. Canda",
         "Jenny B. Escalante",
         "Phoebe Grace J. Bantayan",
-        "Chrisna Abbygail T. Decena",
     ],
     candle: [
         "Michael P. Asidor",

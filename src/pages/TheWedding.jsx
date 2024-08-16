@@ -4,7 +4,7 @@ import { guestList } from "../constants/guests";
 
 const renderTitle = (title) => (
   <div>
-    <p className="font-cursive text-center text-yellowAccent text-[60px]">
+    <p className="font-cursive text-center text-yellowAccent text-6xl">
       {title}
     </p>
     <div className="w-2/5 border border-t border-y-yellowAccent mx-auto my-2" />
