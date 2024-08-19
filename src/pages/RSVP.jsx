@@ -14,8 +14,8 @@ const RSVP = () => {
           Please respond with your ability to attend before the 20th of August
         </p>
         <form>
-          <div class="grid gap-6 mb-6 md:grid-cols-2">
-            <div>
+          <div class="md:grid phone:flex phone:flex-col gap-x-6 mb-6 md:grid-cols-2 ">
+            <div className="">
               <label
                 for="first_name"
                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
@@ -25,12 +25,12 @@ const RSVP = () => {
               <input
                 type="text"
                 id="first_name"
-                class="text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 -700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                class="text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 -700"
                 placeholder="Juan"
                 required
               />
             </div>
-            <div>
+            <div className="">
               <label
                 for="last_name"
                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
@@ -40,11 +40,14 @@ const RSVP = () => {
               <input
                 type="text"
                 id="last_name"
-                class="text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 -700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                class="text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 -700"
                 placeholder="Dela Cruz"
                 required
               />
             </div>
+            <button className="bg-greenAccent w-full my-5 p-2">
+              <text className="text-white">Submit</text>
+            </button>
           </div>
         </form>
       </div>

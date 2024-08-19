@@ -4,6 +4,10 @@ export const faqs = [
         description: "Siguraduha nasa simbahan na 1:45PM. Magsugod ang pag martsa sa entourage saktong 2:00PM. WALAY FILIPINO TIME!"
     },
     {
+        title: "Unsay dapat suoton?",
+        description: `Ang theme is ELEGANT RUSTIC GREENERY para nature lover. FORMAL OR SEMI-FORMAL. PAKISUNOD PO ANG DRESS CODE AT COLOR.`
+    },
+    {
         title: "Pwede ba sa reception nalang muadto?",
         description: "Kung kaon ray apas pwede sad. Chariz lang! We encourage you to witness as we exchange our vows, but if your religion or schedule requires, feel free to go directly to the reception."
     },
@@ -22,10 +26,6 @@ export const faqs = [
     {
         title: "Unsay oras mahuman?",
         description: `It took us months to save and plan for our lovely wedding that everyone would hopefully enjoy. That program is estimated to last until 8PM. PLEASE DON’T EAT AND RUN. (capslock na po) Stay with us until the end of the program!`
-    },
-    {
-        title: "Unsay dapat suoton?",
-        description: `Ang theme is ELEGANT RUSTIC GREENERY para nature lover. FORMAL OR SEMI-FORMAL. PAKISUNOD PO ANG DRESS CODE AT COLOR.`
     },
     {
         title: "Unsay pwedeng iregalo?",

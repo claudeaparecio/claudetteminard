@@ -19,13 +19,13 @@ const Home = () => {
           alt="Header"
         />
       </div>
-      <div class="w-full relative md:h-[70vh] flex items-center justify-start bg-[#FFFBF4] ">
+      <div class="w-full relative md:min-h-[70vh] flex items-center justify-start bg-[#FFFBF4] ">
         <img
           src="./images/floral-01.png"
-          className="md:h-[700px] phone:h-[180px] sm:h-[250px] absolute md:-bottom-40 sm:-bottom-64 phone:-bottom-64 sm:-rotate-45 z-[1] left-0  w-auto object-cover top 0 "
+          className="md:h-[700px] phone:h-[180px] sm:h-[250px] absolute md:-bottom-40 sm:-bottom-64 phone:-bottom-64 sm:-rotate-45 z-[2] left-0  w-auto object-cover top 0 "
           alt="Header"
         />
-        <div className="flex w-full md:flex-row sm:flex-col phone:flex-col">
+        <div className="flex w-full md:flex-row sm:flex-col phone:flex-col ">
           <div className="items-center text-[150px]  justify-center text-start flex flex-col">
             <div className="z-[3] flex md:items-center sm:items-end">
               <div className="md:w-[420px] sm:w-[320px] phone:w-[180px] md:h-[600px] sm:h-[450px] phone:h-[200px] md:p-8 sm:p-6 phone:p-3 rounded-md bg-yellowAccent -rotate-3">
@@ -45,7 +45,7 @@ const Home = () => {
             </div>
           </div>
           <div className="flex-1 items-center md:pl-10 phone:px-2 sm:px-2 justify-center align sm:pt-16 phone:pt-16 ">
-            <div className="flex flex-col md:w-full sm:w-full items-center text-yellowAccent">
+            <div className="flex flex-col md:w-full z-10 sm:w-full items-center text-yellowAccent">
               <p className="font-bold text-[24px] tracking-[10px]">
                 WE'RE GETTING
               </p>
@@ -93,7 +93,7 @@ const Home = () => {
         </div>
         <img
           src="./images/floral-02.png"
-          className="md:h-[600px] phone:h-[180px] sm:h-[250px] absolute top-0 right-0 z-[1] w-auto object-cover"
+          className="md:h-[600px] phone:h-[180px] sm:h-[250px] absolute top-0 -right-[250px] z-[1] w-auto object-cover"
           alt="Header"
         />
       </div>
