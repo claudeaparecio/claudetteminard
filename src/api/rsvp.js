@@ -1,9 +1,8 @@
 import { db } from "./firebase";
 
-export const respondRsvp = (data) => {
-  db.collection('todos').add({
+export const respondRsvp = async (data) => {
+  return await db.collection('rsvps').add({
     ...data,
-    completed: false,
     createdAt: new Date(),
   });
 };
