@@ -5,6 +5,7 @@ import Layout from "./Layout";
 import TheWedding from "./pages/TheWedding";
 import FrequentlyAskedQuestions from "./pages/FAQs";
 import RSVP from "./pages/RSVP";
+import Admin from "./pages/Admin";
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
           <Route path="/frequently-asked-questions" element={<FrequentlyAskedQuestions />} />
           <Route path="/the-wedding" element={<TheWedding />} />
           <Route path="/rsvp" element={<RSVP />} />
-
+          <Route path="/admin" element={<Admin />} />
         </Routes>
       </BrowserRouter>
     </Layout>
