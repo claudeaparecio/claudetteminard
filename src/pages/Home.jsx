@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const Home = () => {
   return (
     <div className="flex flex-col overflow-hidden">
-      <div className="relative md:h-screen phone:h-[800px] flex ">
+      <div className="relative md:h-screen phone:h-[600px] flex ">
         <div className="h-2/3 w-full items-center justify-center  object-cover flex flex-col px-[100px] z-[1] absolute bottom-0 bg-gradient-to-t from-[#FFFBF4]">
           <div className="drop-shadow-xl shadow-black text-greenAccent md:text-[170px] sm:text-[120px] phone:text-[80px]">
             <p className="font-cursive mt-10 ">Claudette</p>
@@ -15,7 +15,7 @@ const Home = () => {
         </div>
         <img
           src="./images/image-1.jpg"
-          className="h-full w-full object-cover absolute top-0 phone:mr-10"
+          className="h-full w-full object-cover absolute top-0 "
           alt="Header"
         />
       </div>
@@ -97,7 +97,7 @@ const Home = () => {
           alt="Header"
         />
       </div>
-      <div class="w-full relative md:h-[70vh] phone:h-auto flex items-center justify-start bg-[#FFFBF4] ">
+      <div class="w-full mb-12 relative md:h-[70vh] phone:h-auto flex items-center justify-start bg-[#FFFBF4] ">
         <div className="items-center phone:gap-y-10 md:px-[100px] phone:px-4 sm:px-4 w-full justify-between text-start flex md:flex-row sm:flex-col phone:flex-col-reverse">
           <div className="md:w-1/2 phone:w-full z-[3] flex ">
             <div class="md:w-4/5 phone:w-full h-full flex flex-col pt-5 items-center justify-center text-greenAccent bg-white border-dashed rounded-3xl border-2 border-greenAccent">
