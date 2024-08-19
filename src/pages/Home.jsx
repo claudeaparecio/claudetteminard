@@ -1,7 +1,11 @@
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useEffect } from "react";
 
 const Home = () => {
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'instant'})
+  }, []);
+
   return (
     <div className="flex flex-col overflow-hidden">
       <div className="relative md:h-screen phone:h-[600px] flex ">
