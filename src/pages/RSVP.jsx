@@ -20,11 +20,11 @@ const RSVP = () => {
         </p>
       </div>
       <form className="w-full md:w-1/2 phone:w-full md:px-auto phone:px-2 my-10">
-        <h3 class="mb-4 font-cursive text-[45px] text-center text-greenAccent dark:text-white">
+        <h3 class="mb-4 font-cursive text-[45px] text-center text-greenAccent">
           Are you going to attend?
         </h3>
         <ul class="w-full ">
-          <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
+          <li class="w-full border-b border-gray-200 rounded-t-lg">
             <div class="flex items-center ps-3">
               <input
                 id="list-radio-id"
@@ -36,7 +36,7 @@ const RSVP = () => {
               />
               <label
                 for="list-radio-id"
-                class="w-full py-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                class="w-full py-3 ms-2 text-sm font-medium text-gray-900">
                 Yes, of course!
               </label>
             </div>
@@ -53,7 +53,7 @@ const RSVP = () => {
               />
               <label
                 for="list-radio-military"
-                class="w-full py-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                class="w-full py-3 ms-2 text-sm font-medium text-gray-900">
                 Sorry I can't make it.
               </label>
             </div>
@@ -63,7 +63,7 @@ const RSVP = () => {
           <div className="w-full">
             <label
               for="first_name"
-              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+              class="block mb-2 text-sm font-medium text-gray-900">
               Full Name
             </label>
             <input
@@ -79,7 +79,7 @@ const RSVP = () => {
           <div class="w-full flex flex-col my-2">
             <label
               for="quantity-input"
-              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+              class="block mb-2 text-sm font-medium text-gray-900">
               How many people will come with you?
             </label>
             <div class="relative flex items-center w-2/5">
@@ -90,7 +90,7 @@ const RSVP = () => {
                 onClick={() => guestCount > 0 && setGuestCount((prev) => prev - 1)}
                 class="bg-gray-100 hover:bg-gray-200 border border-gray-300 rounded-s-lg p-3 h-11 focus:ring-gray-100 focus:ring-2 focus:outline-none">
                 <svg
-                  class="w-3 h-3 text-gray-900 dark:text-white"
+                  class="w-3 h-3 text-gray-900"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -110,7 +110,7 @@ const RSVP = () => {
                 value={guestCount}
                 data-input-counter
                 aria-describedby="helper-text-explanation"
-                class="bg-gray-50 border-x-0 border-gray-300 h-11 text-center text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full py-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                class="bg-gray-50 border-x-0 border-gray-300 h-11 text-center text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full py-2.5"
                 placeholder="999"
                 required
               />
@@ -122,7 +122,7 @@ const RSVP = () => {
                 data-input-counter-increment="quantity-input"
                 class="bg-gray-100 hover:bg-gray-200 border border-gray-300 rounded-e-lg p-3 h-11 focus:ring-gray-100 focus:ring-2 focus:outline-none">
                 <svg
-                  class="w-3 h-3 text-gray-900 dark:text-white"
+                  class="w-3 h-3 text-gray-900"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
