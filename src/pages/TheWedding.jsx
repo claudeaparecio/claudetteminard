@@ -26,17 +26,17 @@ const TheWedding = () => {
       <div className="w-3/5 phone:w-[100%] h-full pb-[100px] mb-[200px] relative">
         <img
           src="./images/floral-02.png"
-          className="md:h-[350px] phone:h-[180px] sm:h-[250px] absolute -top-40 -left-40 z-[1] w-auto rotate-180 object-cover"
+          className="md:h-[350px] phone:h-[180px] sm:h-[250px] absolute phone:-top-20 phone:-left-20 md:-top-40 md:-left-40 z-[1] w-auto rotate-180 object-cover"
           alt="Header"
         />
         <img
           src="./images/floral-02.png"
-          className="md:h-[400px] phone:h-[180px] sm:h-[250px] absolute bottom-[50%] -right-40 z-[1] w-auto rotate-180 object-cover"
+          className="md:h-[400px] phone:h-[180px] sm:h-[250px] absolute bottom-[50%] phone:-right-10 md:-right-40 z-[1] w-auto rotate-180 object-cover"
           alt="Header"
         />
         <img
           src="./images/floral-02.png"
-          className="md:h-[400px] phone:h-[180px] sm:h-[250px] absolute -bottom-20 -left-40 z-[1] w-auto rotate-180 object-cover"
+          className="md:h-[400px] phone:h-[180px] sm:h-[250px] absolute phone:-bottom-5 phone:-right-10 md:-bottom-20 md:-left-40 z-[1] w-auto rotate-180 object-cover"
           alt="Header"
         />
         <div class="flex flex-col  py-5 md:px-[32px] gap-y-9  text-greenAccent bg-white rounded-3xl shadow-lg">

@@ -34,7 +34,7 @@ const RSVP = () => {
 
   return (
     <div className="flex flex-col min-h-screen items-center px-[100px] phone:px-[10px] overflow-hidden bg-[#FFFBF4]">
-      <p className="font-light text-center mt-[200px] text-yellowAccent text-8xl tracking-[10px]">
+      <p className="font-light text-center mt-[200px] text-yellowAccent text-7xl tracking-[10px]">
         RSVP
       </p>
       <div>

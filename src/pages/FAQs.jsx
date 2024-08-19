@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { down, up } from "../constants/icons";
 import { motion } from "framer-motion";
-import { faqs } from "../constants/faqs";
+import { faqs, rsvpFaqs } from "../constants/faqs";
 
 const FrequentlyAskedQuestionBox = ({ title, description, children }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +12,10 @@ const FrequentlyAskedQuestionBox = ({ title, description, children }) => {
         animate={isOpen ? "open" : "closed"}
         className="flex flex-col justify-between md:w-2/5 phone:w-full sm:w-full h-auto mx-auto text-[20px] font-bold pb-4 border-b border-y-yellowAccent "
       >
-        <div className="flex flex-row justify-between w-full md:text-[24px] phone:text-[18px] sm:text-[18px] uppercase text-yellowAccent">
+        <div
+          onClick={() => setIsOpen(!isOpen)}
+          className="cursor-pointer flex flex-row justify-between w-full md:text-[24px] phone:text-[18px] sm:text-[18px] uppercase text-yellowAccent"
+        >
           <p>{title}</p>
           <motion.button onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? up : down}
@@ -79,6 +82,16 @@ const FrequentlyAskedQuestions = () => {
             />
           )
         )}
+        <p className="font-medium text-center mt-[20px] mb-[10px] text-yellowAccent text-2xl tracking-[5px]">
+          RSVP
+        </p>
+        {rsvpFaqs.map((faq, i) => (
+          <FrequentlyAskedQuestionBox
+            key={i}
+            title={faq.title}
+            description={faq.description}
+          />
+        ))}
       </div>
     </div>
   );

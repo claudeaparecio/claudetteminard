@@ -1,5 +1,4 @@
-export const faqs = [
-    {
+export const faqs = [{
         title: "Unsay oras ang kasal?",
         description: "Siguraduha nasa simbahan na 1:45PM. Magsugod ang pag martsa sa entourage saktong 2:00PM. WALAY FILIPINO TIME!"
     },
@@ -31,4 +30,30 @@ export const faqs = [
         title: "Unsay pwedeng iregalo?",
         description: `Your presence at our wedding is gift enough. Pero kung mamugos jud ka. CASH. OPO. KWARTAHON NALANG NATO HAHAHA. Di mi magpa atik atik, mudawat rami’g box ug ang sulod kay Videocard! JOKE ONLY PO. As we begin our journey as husband and wife, dakong butang na para namo ang bisan unsa nga inyong maisip nga makatabang sa among pagsugod.`
     }
+];
+
+export const rsvpFaqs = [{
+        title: "Kanus-a ang deadline for RSVP?",
+        description: "The deadline for RSVP is August 21, 2024.",
+    },
+    {
+        title: "Kinahanglan ba jud mag RSVP?",
+        description: `RSVP stands for "Répondez s'il vous plaît," which is a French phrase that translates to “Please respond” in English. In tagalog UTANG NA LOOB SUMAGOT KAYO 😃 This is very helpful as our coordinator will use this information to plan the seating and other arrangements.`,
+    },
+    {
+        title: "Nag YES ko sa RSVP pero dili diay ka sigurado na makaadto.",
+        description: `Please let us know as soon as possible if your plans change at para ma hatag pa namo sa ubang importanteng bisita ang imong bangko. We understand that circumstances may arise as the wedding day approaches. Malungkot mi kung wala ka pero, paGCASH nalang sa regalo? Charot!!`,
+    },
+    {
+        title: "Nag NO ka sa RSVP pero maka adto diay ka.",
+        description: `Likayan nato na makadungag ta sa stress sa kaslunon TSAR lang. Kung pananglitan nag NO ka, we can no longer guarantee your seat anymore.Please let us know as soon as possible if your plans change.Pangitaan namog paagi bisag maglagot mi gamay HAHA`,
+    },
+    {
+        title: "Unsaon nako pagkabalo na nay koy PLUS ONE?",
+        description: "This invitation is exclusively for the person whose name is specified on the card sent to you.Guests who are not listed on the guest list will not be accommodated at the reception.",
+    },
+    {
+        title: "What help do you need on your wedding day ?",
+        description: "Your 100 % support is all we need.BAWAL ANG KJ.We highly encourage everyone to join and just HAVE FUN and of course GCASH po.",
+    },
 ]
