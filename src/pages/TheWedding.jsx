@@ -13,20 +13,20 @@ const renderTitle = (title) => (
 );
 
 const GridBox = ({ children }) => (
-  <div className="flex flex-row justify-center w-full">{children}</div>
+  <div className="flex md:flex-row phone:flex-col justify-center align w-full">{children}</div>
 );
 
 const TheWedding = () => {
 
   return (
-    <div className="flex flex-col min-h-screen items-center px-[100px] overflow-hidden bg-[#FFFBF4]">
-      <p className="font-cursive text-center mt-[200px] text-yellowAccent text-[100px]">
+    <div className="flex flex-col min-h-screen items-center md:px-[100px] phone:px-[10px] overflow-hidden bg-[#FFFBF4]">
+      <p className="font-cursive text-center mt-[200px] text-yellowAccent text-[100px] phone:text-8xl mb-[20px]">
         The Wedding
       </p>
-      <div className="w-3/5 h-full pb-[100px] mb-[200px] relative">
+      <div className="w-3/5 phone:w-[100%] h-full pb-[100px] mb-[200px] relative">
         <img
           src="./images/floral-02.png"
-          className="md:h-[400px] phone:h-[180px] sm:h-[250px] absolute -top-40 -left-40 z-[1] w-auto rotate-180 object-cover"
+          className="md:h-[350px] phone:h-[180px] sm:h-[250px] absolute -top-40 -left-40 z-[1] w-auto rotate-180 object-cover"
           alt="Header"
         />
         <img
@@ -39,7 +39,7 @@ const TheWedding = () => {
           className="md:h-[400px] phone:h-[180px] sm:h-[250px] absolute -bottom-20 -left-40 z-[1] w-auto rotate-180 object-cover"
           alt="Header"
         />
-        <div class="flex flex-col  py-5 px-32 gap-y-9  text-greenAccent bg-white rounded-3xl shadow-lg">
+        <div class="flex flex-col  py-5 md:px-[32px] gap-y-9  text-greenAccent bg-white rounded-3xl shadow-lg">
           {renderTitle("Entourage")}
           <GridBox>
             <Text
